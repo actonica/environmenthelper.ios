@@ -1,6 +1,6 @@
 # EnvironmentHelper.iOS
 
-To build documentation:
+## To build documentation:
 
 ```
 cd path_to_your_repo/EnvironmentHelper/
@@ -16,3 +16,12 @@ jazzy \
 --output ../docs/ \
 ```
 
+## Before preparing a release version run:
+
+```
+
+/usr/libexec/PlistBuddy path_to/Settings.bundle/Root.plist -c "Clear"
+/usr/libexec/PlistBuddy path_to/Services.plist -c "Clear"
+
+```
+this way you will clear all the info about environments and environment helper will return indefinite result. it must be handled in your app 
