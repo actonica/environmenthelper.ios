@@ -18,6 +18,8 @@ import Foundation
           * production
           * staging
           * develop
+        3) Settings.bundle registered for the application
+ 
 */
 public class EnvironmentHelper {
   /// Default environment. Can be modified externally
