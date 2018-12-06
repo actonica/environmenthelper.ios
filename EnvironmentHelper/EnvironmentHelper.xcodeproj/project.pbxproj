@@ -12,12 +12,23 @@
 		396A3DF921B9006A00DF42FC /* SettingsBundleRegistrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396A3DF821B9006A00DF42FC /* SettingsBundleRegistrator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		396A3E1C21B909D500DF42FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 396A3E1821B909D300DF42FC /* EnvironmentHelperExample.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 396A3E0321B909CA00DF42FC;
+			remoteInfo = EnvironmentHelperExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		396A3DEB21B8B86100DF42FC /* EnvironmentHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvironmentHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		396A3DEE21B8B86100DF42FC /* EnvironmentHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvironmentHelper.h; sourceTree = "<group>"; };
 		396A3DEF21B8B86100DF42FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		396A3DF621B8B87100DF42FC /* EnvironmentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentHelper.swift; sourceTree = "<group>"; };
 		396A3DF821B9006A00DF42FC /* SettingsBundleRegistrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleRegistrator.swift; sourceTree = "<group>"; };
+		396A3E1821B909D300DF42FC /* EnvironmentHelperExample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EnvironmentHelperExample.xcodeproj; path = EnvironmentHelperExample/EnvironmentHelperExample.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +45,7 @@
 		396A3DE121B8B86100DF42FC = {
 			isa = PBXGroup;
 			children = (
+				396A3E1821B909D300DF42FC /* EnvironmentHelperExample.xcodeproj */,
 				396A3DED21B8B86100DF42FC /* EnvironmentHelper */,
 				396A3DEC21B8B86100DF42FC /* Products */,
 			);
@@ -56,6 +68,14 @@
 				396A3DF821B9006A00DF42FC /* SettingsBundleRegistrator.swift */,
 			);
 			path = EnvironmentHelper;
+			sourceTree = "<group>";
+		};
+		396A3E1921B909D300DF42FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				396A3E1D21B909D500DF42FC /* EnvironmentHelperExample.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,12 +135,28 @@
 			mainGroup = 396A3DE121B8B86100DF42FC;
 			productRefGroup = 396A3DEC21B8B86100DF42FC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 396A3E1921B909D300DF42FC /* Products */;
+					ProjectRef = 396A3E1821B909D300DF42FC /* EnvironmentHelperExample.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				396A3DEA21B8B86100DF42FC /* EnvironmentHelper */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		396A3E1D21B909D500DF42FC /* EnvironmentHelperExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = EnvironmentHelperExample.app;
+			remoteRef = 396A3E1C21B909D500DF42FC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		396A3DE921B8B86100DF42FC /* Resources */ = {
