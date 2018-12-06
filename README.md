@@ -13,6 +13,6 @@ jazzy \
 --module-version 1.0 \
 --xcodebuild-arguments -scheme,EnvironmentHelper \
 --module EnvironmentHelper \
---output ../docs/swift_output \
+--output ../docs/ \
 ```
 
