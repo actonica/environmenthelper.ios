@@ -19,12 +19,12 @@ import Foundation
           * staging
           * develop
 */
-class EnvironmentHelper {
+public class EnvironmentHelper {
   /// Default environment. Can be modified externally
-  static var defaultEnvironment: Environment = .production
+  public static var defaultEnvironment: Environment = .production
   
   /// Possible environments
-  enum Environment: String {
+  public enum Environment: String {
     /// If user has not specified any environment
     case indefinite
     /// Production server
@@ -42,7 +42,7 @@ class EnvironmentHelper {
   ///   - defaultEnvironment: which environment to return if no preferred environment has been found. See also `EnvironmentHelper.defaultEnvironment` static property
   /// - Returns:
   ///   user preferred environment or default either set by user explicitly or implcitly stored in `EnvironmentHelper.defaultEnvironment` property
-  static func preferredEnvironment(or defaultEnvironment: Environment = defaultEnvironment) -> Environment {
+  public static func preferredEnvironment(or defaultEnvironment: Environment = defaultEnvironment) -> Environment {
     if let env = UserDefaults.standard.string(forKey: "environment") {
       if let environment = Environment(rawValue: env) {
         return environment
@@ -70,7 +70,7 @@ class EnvironmentHelper {
    ```
    
   */
-  static func environmentUrlString(_ environment: Environment) -> String? {
+  public static func environmentUrlString(_ environment: Environment) -> String? {
     if let path = Bundle.main.url(forResource: "Services", withExtension: "plist"),
       let data = try? Data(contentsOf: path) {
       do {
